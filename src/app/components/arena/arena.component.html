@@ -1,0 +1,5 @@
+<div class="image-container">
+    @for (card of cardService.allCards; track $index) {
+        <img class="card-image" [src]="card.card_images[0].image_url" />
+    }
+</div>
